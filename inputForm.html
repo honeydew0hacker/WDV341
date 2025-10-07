@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>WDV101 Intro HTML and CSS</title>
+
+  <style>
+    form {
+      width: 600px;
+      margin: auto;
+      background-color: lightblue;
+      padding-left: 20px;
+    }
+
+    form legend {
+      font-size: larger;
+      text-align: center;
+    }
+  </style>
+
+</head>
+
+<body>
+  <h1>WDV101 Intro HTML and CSS</h1>
+  <h2>UNIT 5 - Lesson 2 Server Side Forms</h2>
+  <p>This is an example input form that will demonstrate how a form connects to a server side process.</p>
+  <form id="form1" name="form1" method="post" action="formHandler.php">
+
+    <legend>Example Form</legend>
+
+    <p>
+      <label for="first_name">First Name:</label>
+      <input type="text" name="first_name" id="first_name" />
+    </p>
+
+    <p>
+      <label for="last_name">Last Name:</label>
+      <input type="text" name="last_name" id="last_name" />
+    </p>
+
+    <p>
+      <label for="email">Email:</label>
+      <input type="email" name="email" id="email" />
+    </p>
+
+    <p>
+      <label for="academic_standing">Academic Standing:</label>
+      <br>
+      <input type="radio" id="high_school" value="High School" name="academic_standing" />
+      <label for="high_school" name="academic_standing">High School</label>
+      <br>
+      <input type="radio" id="freshmen" value="Freshmen" name="academic_standing" />
+      <label for="freshmen" name="academic_standing">Freshmen</label>
+      <br>
+      <input type="radio" id="sophmore" value="Sophmore" name="academic_standing"/>
+      <label for="sophmore" name="academic_standing">Sophmore</label>
+    </p>
+
+    <p>
+      <label for="degrees">Degree:</label>
+      <select name="degrees" value="degrees">
+        <option value="default">Default</option>
+        <option value="Compture Info Sys">Computure Information Systems</option>
+        <option value="Graphic Design">Graphic Design</option>
+        <option value="Web Development">Web Development</option>
+      </select>
+    </p>
+
+    <p>
+      <label for="school_name">School Name:</label>
+      <input type="text" name="school_name" id="school_name" />
+    </p>
+
+    <p>
+      <input type="checkbox" name="info" value="Info" id="info" />
+      <label for="info">Please contact me with program information.</label>
+      <br>
+      <input type="checkbox" name="contact" value="Contact" id="contact" />
+      <label for="contact" name="contact" value="Contact">I would like to contact a program advisor</label>
+    </p>
+
+    <p>
+      <label for="comments">Comments:</label>
+      <br>
+      <textarea id="comments" name="comments" rows="5" cols="50"></textarea>
+    </p>
+
+    <p>
+      <input type="submit" name="button" id="button" value="Submit" />
+      <input type="reset" name="button2" id="button2" value="Reset" />
+    </p>
+
+  </form>
+
+  <p>&nbsp;</p>
+</body>
+
+</html>
